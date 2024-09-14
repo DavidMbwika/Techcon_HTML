@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <body>
         <header>
             <h1>Conference Name</h1>
             <nav>
               <a href="/about.html">About</a>
               <a href="/schedule.html">Schedule</a>
-              <a href="/register.html">Register</a>
+              <a href="/index.html">Home</a>
               <a href="/contact.html">Contact</a>
             </nav>
           </header>
           <main>
-            <section>
-              <p>TECHCON 2024, a unique celebration of innovation and excellence, took place from September 8-10, 2024, at the Renaissance Hotel in Austin, Texas. 
-                This year's conference brought together a diverse group of industry leaders, undergraduate and graduate students, and technical recruiters. 
-                It was a platform for exchanging ideas, fostering collaboration,and celebrating achievements in the semiconductor industry. 
-                 The conference was distinguished by the presence of two exceptional speakers who delivered insightful presentations that left a lasting impact on the audience.</p>
-              <iframe src="https://www.youtube.com/embed/eGaImwD8fPQ" title="How to upload files/folders/projects on github | Upload Project folder on github (Simple Way)" width="1212" height="682" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </section>
+            <!-- Registration Form -->
+            <form>
+              <!-- Field for Name -->
+              <label for="name">Full Name:</label>
+              <input id="name" name="name" type="text" required>
+          
+              <!-- Field for Email -->
+              <label for="email">Email:</label>
+              <input id="email" name="email" type="email" required>
+          
+              <!-- Password Fields -->
+              <label for="password">Password:</label>
+              <input id="password" name="password" type="password" required>
+          
+              <label for="confirm-password">Confirm Password:</label>
+              <input id="confirm-password" name="confirm-password" type="password" required>
+          
+              <!-- Checkbox for Terms and Conditions -->
+              <input id="terms" name="terms" type="checkbox" required>
+              <label for="terms">I agree to the terms and conditions</label>
+          
+              <!-- Submit Button -->
+              <button type="submit">Register Now</button>
+            </form>
           </main>
           <footer>
             <p>Copyright 2023 Conference Name. All rights reserved.</p>
